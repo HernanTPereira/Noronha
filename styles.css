@@ -1,0 +1,95 @@
+:root{
+    --color-negro: #0C1919;
+    --color-gris-base: #303030;
+    --color-amarillo: #E1A142;
+    --color-turqueza: #4E7777;
+    --color-turqueza-selected: #88AAAA;
+} 
+
+
+*, :after, :before {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    transition: all 0.4s ease-in-out;
+    font-size: 1rem;
+    color: var(--color-gris-base);
+
+}
+
+h1, h2, h3 {
+    font-family: 'Indie Flower', cursive;
+}
+
+/*HEADER */
+
+nav{
+    background-color: var(--color-negro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+nav > li {
+    display: none;
+}
+
+header > section{
+    background-image: url(/img/inicio/portada.jpg);
+    background-color: var(--color-negro);
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: relative;
+    color: #FFF;
+    z-index: -1;
+}
+
+header > section > h1{
+    padding: 3rem 1rem 1rem 1rem ;
+    font-size: 2.5rem;
+}
+
+header > section > p{
+    padding: 0 1rem;
+    max-width: 37rem;
+}
+
+
+/*SECTION Actividades*/
+
+.actividades-wrapper > h2 {
+    display: none;
+}
+
+.actividades-wrapper{
+    max-width: 1072px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 0.5rem;
+    background-color: #FFF;
+    z-index: 1;
+    margin-top: -2rem;
+    border-radius: 25px;
+}
+
+.actividades-wrapper > div > img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+.actividades-wrapper > div {
+    width: 328px;
+}
