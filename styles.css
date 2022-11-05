@@ -2,14 +2,15 @@
     --color-negro: #0C1919;
     --color-gris-base: #303030;
     --color-amarillo: #E1A142;
-    --color-turqueza: #4E7777;
+    --color-turqueza: #4e7777;
     --color-turqueza-selected: #88AAAA;
+    --box-shadow-1: 0px 7px 10px rgba(78, 119, 119, 0.4);
 } 
 
 
-*, :after, :before {
+* {
     box-sizing: border-box;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     list-style: none;
 }
@@ -26,6 +27,32 @@ h1, h2, h3 {
     font-family: 'Indie Flower', cursive;
 }
 
+h2{
+    font-size: 2rem;
+    color: var(--color-amarillo);
+}
+
+h3{
+    font-size: 1.7rem;
+    color: var(--color-turqueza);
+}
+
+button{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem;
+    background-color: var(--color-turqueza);
+    border: none;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: #FFF;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow-1);
+}
+
+button:active {
+    background-color: var(--color-turqueza-selected);
+}
+
 /*HEADER */
 
 nav{
@@ -33,7 +60,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem;
+    padding: 0.5rem 1.8rem;
 }
 
 nav > li {
@@ -42,23 +69,25 @@ nav > li {
 
 header > section{
     background-image: url(/img/inicio/portada.jpg);
-    background-color: var(--color-negro);
-    height: 50vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: auto;
-    position: relative;
+    background-position: top;
+    background-size: cover;
     color: #FFF;
     z-index: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-bottom: 1rem;
 }
 
 header > section > h1{
-    padding: 3rem 1rem 1rem 1rem ;
+    padding: 1.5rem 2rem 0.5rem 2rem ;
     font-size: 2.5rem;
+    line-height: 2.5rem;
 }
 
 header > section > p{
-    padding: 0 1rem;
+    padding: 0 2rem 1rem 2rem;
     max-width: 37rem;
 }
 
@@ -80,7 +109,7 @@ header > section > p{
     padding: 1rem 0.5rem;
     background-color: #FFF;
     z-index: 1;
-    margin-top: -2rem;
+    margin-top: -1.5rem;
     border-radius: 25px;
 }
 
@@ -88,8 +117,39 @@ header > section > p{
     max-width: 100%;
     height: auto;
     border-radius: 25px;
+    box-shadow: var(--box-shadow-1);
+}
+
+.actividades-wrapper > div > h3{
+    padding-top: 1rem;
 }
 
 .actividades-wrapper > div {
     width: 328px;
+    padding-bottom: 1.5rem;
 }
+
+/*SECTION Informacion*/
+
+.info{
+    text-align: center;
+    padding: 1.5rem 2rem 0.5rem 2rem ;
+}
+
+.info > h2 {
+    padding: 1rem;
+}
+
+/*SECTION Frase*/
+
+.banner{
+    background-image: url(/img/inicio/fondo-ola.jpg);
+    background-size: cover;
+    color: #FFF;
+    text-align: center;
+    padding: 1.5rem 2rem;
+}
+
+
+/*SECTION Destacados*/
+
