@@ -85,7 +85,7 @@ nav{
 
 
 header > section{
-    background-image: url(/img/inicio/portada.jpg);
+    background-image: url(img/inicio/portada.jpg);
     background-position: top;
     background-size: cover;
     color: #FFF;
@@ -164,7 +164,7 @@ header > section > div > p{
 /*SECTION Frase*/
 
 .banner{
-    background-image: url(/img/inicio/fondo-ola.jpg);
+    background-image: url(img/inicio/fondo-ola.jpg);
     background-size: cover;
     color: #FFF;
     text-align: center;
