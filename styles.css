@@ -94,7 +94,7 @@ nav{
 
 
 header > section{
-    background-image: url(img/inicio/portada.jpg);
+    background-image: url(/img/inicio/portada.jpg);
     background-position: top;
     background-size: cover;
     color: #FFF;
@@ -178,7 +178,7 @@ header > section > div > p{
 /*SECTION Frase*/
 
 .banner{
-    background-image: url(img/inicio/fondo-ola.jpg);
+    background-image: url(/img/inicio/fondo-ola.jpg);
     background-size: cover;
     color: #FFF;
     text-align: center;
@@ -197,7 +197,7 @@ header > section > div > p{
     flex-direction: column;
     justify-content:flex-start;
     align-items: center;
-    padding: 2rem 2rem;
+    padding: 0rem 2rem 2rem 2rem;
 }
 
 .destacado-img{
@@ -468,10 +468,6 @@ header > section > div > p{
     border-radius: 10px;
     margin: 0;
     flex-grow: 0;
-}
-
-.section-testimonio{
-    max-width: 1024px;
 }
 
 .wrapper-testimonio{
